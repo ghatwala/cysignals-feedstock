@@ -7,13 +7,12 @@ language: generic
 
 env:
   matrix:
-    include:
-      - os: linux-ppc64le
-        dist: xenial
-        sudo: false
-      - os: linux-ppc64le
-        dist: xenial
-        sudo: required 
+    - os: linux-ppc64le
+      dist: xenial
+      sudo: false
+    - os: linux-ppc64le
+      dist: xenial
+      sudo: required 
     - CONDA_PY=27
     - CONDA_PY=35
     - CONDA_PY=36
