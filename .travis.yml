@@ -2,9 +2,11 @@
 # update the conda-forge.yml and/or the recipe/meta.yaml.
 
 language: generic
-
-os: osx
-osx_image: xcode6.4
+os: linux-ppc64le
+dist: xenial
+sudo: required
+#os: osx
+#osx_image: xcode6.4
 
 env:
   matrix:
