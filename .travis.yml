@@ -14,9 +14,9 @@ env:
       - os: linux-ppc64le
         dist: xenial
         sudo: required 
-    - CONDA_PY=27
-    - CONDA_PY=35
-    - CONDA_PY=36
+      - CONDA_PY=27
+      - CONDA_PY=35
+      - CONDA_PY=36
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
     - secure: "ITf/8p/wYAiPPD+11hKNeGh0xgJ0lHjmCt4deTb4nPGZTO++MyGTj0yrrbeHxlj/JsjOO+U7hrT3pSGBCtZeQooR6x6wHnoXhd0AvcGI4fjL5vBoGdKTOwKDmsL3fvuSr/a1ilHVSk6QhBnRT5x9yGF6LpQH+ASe4gWXeELifPo4KTTyw4oXdnH1CwRuWTWVgRut13umXL2zH3bS3Dr/sjMx/lHYfKJbBz3BwzZFWJNNemIzMvB4WR8lxDA04gDDHoB7OvHRVbuivBi+HsSGn9+xMAlXyvBmgyWfwmwOzJfM0wFZrxpb6hwum8duQ+qlGuEgZqq6PX0egloeRKIVwv3mRe3QwcqBcTUufKuBQjEFXwKBZvoZ+M8MX3pedDd5jqKBdfKwdFnjlQLp2tWffMv76hEF6ctJO+bW/jcIQ7kOUrmyBsrOk+UHLNVDUiidX1zfuXABt3LXSBOtQFJpdzJAWx9F7uxOV1Dhsw3/gNvXRR9YeLyLSVCX9COlrbmh9idZhIKEWSRKCmTBOIOEYDIK9M58o40hHTE1vi0VhPc6H7y5f1kr44S3mfjyBvgnwlcCgdbr2Q+PKxefIn7FnzD3sA7rTKFUBV2JYEcCDXa1jvvuUwi+dhw6tsQdzKawRo/yTfmxFpYMr6po9MuV+5kB2m6WW7v2UrLckSVPEBw="
