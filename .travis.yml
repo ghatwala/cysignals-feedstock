@@ -2,15 +2,18 @@
 # update the conda-forge.yml and/or the recipe/meta.yaml.
 
 language: generic
-os: linux-ppc64le
-dist: xenial
-sudo: required
 #os: osx
 #osx_image: xcode6.4
 
 env:
   matrix:
-    
+    include:
+      - os: linux-ppc64le
+        dist: xenial
+        sudo: false
+      - os: linux-ppc64le
+        dist: xenial
+        sudo: required 
     - CONDA_PY=27
     - CONDA_PY=35
     - CONDA_PY=36
@@ -41,7 +44,7 @@ install:
       echo ""
       echo "Installing a fresh version of Miniconda."
       MINICONDA_URL="https://repo.continuum.io/miniconda"
-      MINICONDA_FILE="Miniconda3-latest-MacOSX-x86_64.sh"
+      MINICONDA_FILE="Miniconda3-latest-Linux-ppc64le.sh"
       curl -L -O "${MINICONDA_URL}/${MINICONDA_FILE}"
       bash $MINICONDA_FILE -b
 
