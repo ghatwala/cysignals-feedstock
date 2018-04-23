@@ -4,7 +4,7 @@
 language: generic
 os: linux-ppc64le
 dist: xenial
-sudo: false
+sudo: required
 #os: osx
 #osx_image: xcode6.4
 
